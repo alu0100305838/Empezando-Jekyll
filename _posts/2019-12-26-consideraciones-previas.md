@@ -36,7 +36,8 @@ La manera más rápida de empezar, donde ni siquiera tendremos que instalar nada
 Como uno de los mejores artículos /tutoriales está basado en la plantilla **Jekyll Now**, y sugiere comenzar con un *fork* de la misma, voy a empezar mis pasos con Jekyll siguiendo el artículo *Build A Blog With Jekyll And GitHub Pages* de *Barry Clark* (autor de la plantilla en cuestión, nada menos).   
 
 ***
-De aquí en más, veremos en la próxima entrada los pasos para implementar la plantilla elegida y los problemas que irán apareciendo al tratar de configurarla...
+De aquí en más, veremos en la próxima entrada los pasos para implementar la plantilla elegida y los problemas que irán apareciendo al tratar de configurarla...  
+
 ***
 FUENTES:
 
