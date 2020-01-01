@@ -17,6 +17,6 @@ Trabajo de docente en informática, y estoy estudiando utilizar la plataforma Gi
 
 ### Contact me
 
-[envíame un mail](mailto:{{ site.email }})
+[envíame un mail](mailto:dsigno4all@gmail.com)
 
-{{ site.email }}
+
