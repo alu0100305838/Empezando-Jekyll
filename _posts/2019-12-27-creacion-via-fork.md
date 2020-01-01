@@ -5,7 +5,6 @@ date: 2019-12-27 11:00:00 -0300
 tag: GitHub
 ---
 
-# Creación vía *fork* | Paso a paso
 
 Comenzar con una bifurcación (*fork*) es excelente porque te dará una idea de cómo es Jekyll antes de que tengas que configurar un entorno de desarrollo local, instalar dependencias y descubrir el proceso de compilación de Jekyll.
 
