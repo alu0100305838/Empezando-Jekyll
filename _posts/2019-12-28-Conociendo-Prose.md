@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Conociendo Prose
 date: '2019-12-28 06:00:00 -0300'
