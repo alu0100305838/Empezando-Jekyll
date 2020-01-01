@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Sobre mi
 permalink: /about/
 published: true
 ---
@@ -17,4 +17,4 @@ Trabajo de docente en informática, y estoy estudiando utilizar la plataforma Gi
 
 ### Contact me
 
-[envíame un mail](mailto:{{ site.email }})
+[envíame un mail](mailto: {{ site.email }})
