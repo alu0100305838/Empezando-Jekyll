@@ -57,7 +57,7 @@ baseurl: "/Empezando-Jekyll"
 
 > A diferencia de lo que sucedió con la plantilla *Emerald* (usada en un intento anterior, sin final feliz ), la definición de **baseurl** sin  *trailing slash* no generó problemas.
 
-## Paso 3
+## Paso 4
 
 Publicar el primer post, *like a Hello World!*
 
