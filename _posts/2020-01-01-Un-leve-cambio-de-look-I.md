@@ -56,3 +56,11 @@ Un detalle a considerar es que las URL de las imágenes se *sirven* desde raw.gi
 
 En la segunda parte del post nos dedicaremos a la tipografía...
 
+***
+
+PD: la línea propuesta para el favicon sólo funciona para la página *home*... debe ser:
+
+```
+<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico">
+```
+
