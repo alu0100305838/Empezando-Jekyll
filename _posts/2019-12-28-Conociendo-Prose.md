@@ -28,7 +28,7 @@ Al seleccionar la edición de *404.md*, nos aparece la siguiente ventana con las
 
 ![edicion Prose]({{site.baseurl}}/images/edicion Prose.PNG)
 
-El trabajo por hacer es bastante intuitivo: la única posibilidad de confusión puede darse en la presencia de variables YAML como `\{{ site.baseurl \}}`,  variables sobre la que hablaremos más adelante (espero...).
+El trabajo por hacer es bastante intuitivo: la única posibilidad de confusión puede darse en la presencia de variables YAML como `{&#123; site.baseurl &#125;}`,  variables sobre la que hablaremos más adelante (espero...).
 
 Cuando estemos conformes con los cambios, y por trabajar con la filosofía de Git, no se confirmarán directamente sino que nos mostrará una ventana mostrando las diferencias entre contenido previo y nuevo, y la opción de acompañar al *commit* con un mensaje personalizado:
 
