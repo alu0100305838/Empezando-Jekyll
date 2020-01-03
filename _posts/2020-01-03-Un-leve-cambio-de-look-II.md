@@ -115,7 +115,7 @@ $georgia: Georgia, serif;
 }
 ```
 
-En la sección `Font stacks`  vemos donde deberemos redefinir no sólo las fuentes (pensadas para el entorno Mac OS yo creo), sino cambiar sus nombres... cito lo encontrado en esta página de la que tomo buena parte de mi información =>  [dirk lüsebrink | Google Web Fonts for my Jekyll Sass](http://sebrink.de/Google-Webfonts-for-my-Jekyll/)
+En la sección `Font stacks`  vemos donde deberemos redefinir no sólo las fuentes (pensadas para el entorno Mac OS yo creo), sino cambiar sus nombres... cito lo encontrado en esta página de la que tomo buena parte de mi información =>  [dirk lüsebrink - Google Web Fonts for my Jekyll Sass](http://sebrink.de/Google-Webfonts-for-my-Jekyll/)
 
 > I don’t understand the original logic in the `style.css` file of [Jekyll Now](http://github.com/barryclark/jekyll-now). For example, the `h1` headlines font is set to `font-family: $helveticaNeue;`. You have a sass variable for the font family, but it is named after the content of the variable. So when now changing the font-family you would either need to put another font value into the `$helveticaNeue` variable, which is confusing, or you need to change all references to `$helveticaNeue` var to references to a new font variable. Also not a smart move.
 
