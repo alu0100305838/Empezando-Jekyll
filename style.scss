@@ -205,6 +205,7 @@ img {
   color: $gray;
   font-size: 16px;
   font-style: italic;
+  padding: 0 10px;
 
   @include mobile {
     margin: 3px 0;
