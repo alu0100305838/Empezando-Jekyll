@@ -15,9 +15,11 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// google web fonts
+$Headers: 'Bebas Neue', sans-serif; 
+$SansSerif: 'Lato', sans-serif;
+// fuentes de sistema
+$Monospace: Monaco, Consolas, "Lucida Console", monospace; 
 
 // Mobile breakpoints
 @mixin mobile {
