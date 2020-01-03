@@ -13,8 +13,8 @@ Siendo un tema que tiene más que ver con el diseño gráfico, conviene auxiliar
 
 Menciono un par de ellos, con ejemplos donde se incluyen las fuentes que voy a usar:
 
-+ [Canva | font combinations : Bevas Neue](https://www.canva.com/font-combinations/bebas-neue/)
-+ [typ.io | Bebas with Lato](http://typ.io/s/1zw5)
++ [Canva - font combinations : Bevas Neue](https://www.canva.com/font-combinations/bebas-neue/)
++ [typ.io - Bebas with Lato](http://typ.io/s/1zw5)
 + [Pair & Compare ](https://www.pairandcompare.net/)
 
 En el sitio **typ.io** ofrecen además numéricos para el uso de *pairings fonts*; transcribo valores CSS sugeridos para *Bebas* y *Lato*, pero cambiaré a *Bebas Neue* para tener dos fuentes existentes en *GoogleFonts*.
