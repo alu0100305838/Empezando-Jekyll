@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $Headers;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: normal;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -196,7 +196,7 @@ img {
   cursor: pointer;
   font-family: $Headers;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 44px;
   letter-spacing: 1px;
 }
 
