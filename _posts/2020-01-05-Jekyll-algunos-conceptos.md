@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Jekyll (algunos conceptos)
-date: 2020-01-05 22:00:00 -0300
+date: '2020-01-05 22:00:00 -0300'
 tag: GitHub Jekyll-local Git
+published: true
 ---
 
 Hasta ahora hemos estado trabajando directamente desde GitHub (esto es, *online*), todo esto facilitado por el hecho de haber partido con un *fork* de una plantilla llamada *Jekyll Now*. En todo caso nuestro sitio siempre corre bajo el entorno llamado *GitHub Pages* (GitHub "sirve" nuestro sitio web, funciona como "servidor web").
@@ -41,7 +42,7 @@ La segunda y tercera opción necesitarán de la instalación de algo de software
 
 ***
 
-En lo personal voy a trabajar en un "entorno remoto" que implimentaré en una máquina virtual corriendo Linux Mint, aunque existen instaladores tanto de Git como de Ruby para los Sistemas operativos Windows y MacOs.
+En lo personal voy a trabajar en un "entorno local" que implimentaré en una máquina virtual corriendo Linux Mint, aunque existen instaladores tanto de Git como de Ruby para los Sistemas operativos Windows y MacOs.
 
 ***
 
