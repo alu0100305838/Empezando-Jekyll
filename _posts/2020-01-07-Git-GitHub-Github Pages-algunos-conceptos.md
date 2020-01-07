@@ -25,7 +25,7 @@ Tanto *Git*, *GitHub* y *GitHub Pages* están muy relacionados. Imagine a **Git*
 
 En el diagrama a continuación, cada etapa representa un nuevo "**guardar**". Sin *Git*, no puede volver a ninguna de las etapas intermedias entre el borrador inicial y el borrador final. Si deseáramos cambiar el párrafo inicial en el borrador final, tendríamos que borrar datos que no podríamos recuperar. Para evitar esto, normalmente utilizamos la opción "**guardar como**", le asignamos al trabajo un nombre diferente, y ahí sí eliminamos el párrafo inicial y comenzamos a escribir uno nuevo.
 
-![img](http://jmcglone.com/img/guides/git-basics.png)
+![git basics]({{site.baseurl}}/images/git-basics.png)
 
 Con *Git*, **el flujo es multidireccional**. Cada cambio que es significativo se marca como importante en una versión, y continúa. Si necesita volver a las etapas anteriores, puede hacerlo sin ninguna pérdida de datos. Actualmente, el "historial de revisiones" de *Google Docs* o el "historial de edición" de Wikipedia funcionan de esta manera. *Git* es mucho más detallado y puede ser mucho más complejo si es necesario. 
 
