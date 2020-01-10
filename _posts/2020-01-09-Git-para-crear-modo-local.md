@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Git para crear modo local
 date: '2020-01-09 22:00:00 -0300'
