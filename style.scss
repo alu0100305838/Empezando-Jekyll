@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-	
+
   em, i {
     padding-right: .15em;//para Bevas Neue
   }
@@ -270,12 +270,12 @@ nav {
     color: $gray;
     font-size: 20px;
     font-style: italic;
-    
-	  em { 
+
+	  em {
 	    font-style: normal;
 	  }
   }
-	
+
   .comments {
     margin-top: 10px;
   }
@@ -296,6 +296,10 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+article h1 {
+  text-decoration: underline;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
