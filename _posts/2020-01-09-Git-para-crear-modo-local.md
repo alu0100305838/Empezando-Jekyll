@@ -157,8 +157,73 @@ $ git add images/clone-results.PNG
 
 
 
+## PD: ¿Y si ahora agrego un *post* *con el viejo método*? (desde el sitio de *GitHub*)
+
+De hecho, acabo se hacer esto con este mismísimo post —lo que antecede a esta post-data, *of course*—
+
+Sabemos, pues, que hay un archivo en *GitHub* que no tenemos en nuestro repo local... la manera **rápida** de sincronizar este repositorio es a través del comando `git pull` para *bajar* y *fusionar* los cambios remotos.
+
+> Usando `pull` en realidad estaremos haciendo un `fetch` y un `merge` (ya lo detallaremos más adelante)
+
+Usaremos un método que separe por pasos la sincronización...
+
+### Git fetch + Git merge
+
+El comando `git fetch ` nos va a permitir recuperar todos los ficheros de un repositorio remoto que hayan sido modificados por otros colaboradores del proyecto y que actualmente no disponemos de ellos.
+
+[`Git fetch`](https://git-scm.com/docs/git-fetch) tan sólo recupera la información del repositorio remoto y **la ubica en una rama oculta de tu repositorio local**, por lo que no la fusionará automáticamente con tu repositorio local. En este caso tenemos que saber que por cada repositorio remoto que tengamos configurado también tendremos una rama oculta de este.
+
+```bash
+$ git fetch
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 6), reused 0 (delta 0), pack-reused 0
+Desempaquetando objetos: 100% (12/12), listo.
+Desde https://github.com/dsigno/Empezando-Jekyll
+   6307318..524dc14  gh-pages   -> origin/gh-pages
+$ git status
+En la rama gh-pages
+Tu rama está detrás de 'origin/gh-pages' por 3 commits, y puede ser avanzada rápido.
+  (usa "git pull" para actualizar tu rama local)
+
+nada para hacer commit, el árbol de trabajo esta limpio
+```
+
+Y como último paso vamos a fusionar esta rama  con la rama local en la que estamos trabajando actualmente y para ello necesitamos hacer uso del comando `git merge`.
+
+```bash
+$ git merge origin/gh-pages
+Actualizando 6307318..524dc14
+Fast-forward
+ _posts/2020-01-09-Git-para-crear-modo-local.md | 164 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 164 insertions(+)
+ create mode 100644 _posts/2020-01-09-Git-para-crear-modo-local.md
+```
+
+
+
+## Como actualizar y sincronizar este post (con PD), y traerlo a local con pull
+
+Toda esta parte que estoy agregando al post original la voy a insertar usando *Prose* (directamente desde *GitHub*), por lo que tendré luego que ***sincronizar* nuevamente** mi sitio local: esta vez usaré el comando `pull`
+
+### Git pull
+
+El comando `git pull` es un atajo o una forma de abreviar todos los procesos que realizamos usando los comandos `git fetch` y `git merge` por lo que nos permite ahorrar tiempo.
+
+> Cuando realizamos un `git pull` estamos sincronizando y trayéndonos todos los cambios del repositorio remoto a la rama en la que estemos trabajando actualmente, sin necesidad de ejecutar ningún comando extra.
+
+
+NOTA: También nos puede ocasionar algún disgusto por lo que en proyectos grandes quizás sea mejor comprobar antes dichos cambios hacia una rama alternativa.
+
+
+
 FUENTES
 
 [2.1 Fundamentos de Git - Obteniendo un repositorio Git](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git)
 
 [What is the difference between pull and clone in git?](https://stackoverflow.com/questions/3620633/what-is-the-difference-between-pull-and-clone-in-git)
+
+[git fetch y git pull, Diferencias y formas de uso](https://blog.artegrafico.net/git-fetch-y-git-pull-diferencias-y-formas-de-uso)
+
+[¿Por qué “git diff” no funciona sin antes hacer un “git fetch”?](https://es.stackoverflow.com/questions/196396/por-qué-git-diff-no-funciona-sin-antes-hacer-un-git-fetch)
