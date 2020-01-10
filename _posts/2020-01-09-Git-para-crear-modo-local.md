@@ -217,6 +217,31 @@ El comando `git pull` es un atajo o una forma de abreviar todos los procesos que
 NOTA: También nos puede ocasionar algún disgusto por lo que en proyectos grandes quizás sea mejor comprobar antes dichos cambios hacia una rama alternativa.
 
 
+```
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Desempaquetando objetos: 100% (4/4), listo.
+Desde https://github.com/dsigno/Empezando-Jekyll
+   524dc14..2975eb2  gh-pages   -> origin/gh-pages
+Actualizando 524dc14..2975eb2
+Fast-forward
+ _posts/2020-01-09-Git-para-crear-modo-local.md | 65 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 65 insertions(+)
+```
+
+## Para cerrar...
+
+En este post comenzamos con el trabajo del sitio *en modo local* (aun sin instalar *Jekyll*), y usamos aquellos comandos de *git*  más frecuentes —con la ausencia de comandos de *deshacer*, principalmente—
+
+Falta dedicar algún resumen ampliatorio sobre la filosofía de trabajo con *Git*... veré como armar algo.
+
+***
+
+> NOTA final: si el desarrollador del sitio es una sola persona, una vez que ha creado su "entorno de trabajo local" es conveniente que trabaje todo desde su máquina y luego use `git push`; mejor aún , conviene que abra una rama (*branch*) de desarrollo (normalmente llamada *development*) para probar sus cambios, y luego con `merge` integre dichos cambios a la rama principal o estable —*gh-pages* en nuestro caso—
+
 
 FUENTES
 
