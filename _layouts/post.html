@@ -10,7 +10,20 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Escrito el {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  <div class="post-nav">
+    <p>
+      {% if page.previous.url %}
+      <a href="{{ site.baseurl }}{{page.previous.url}}">&#8672;&nbsp;{{page.previous.title}}</a>
+      {% endif %}
+    </p>
+    <p>
+      {% if page.next.url %}
+      <a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}&nbsp;&#8674;</a>
+      {% endif %}
+    </p>
   </div>
 
   {% include disqus.html %}

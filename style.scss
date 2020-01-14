@@ -127,6 +127,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  text-align: right;
 }
 
 // Specify the color of the selection
@@ -284,6 +285,25 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+
+.post-nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 2em;
+	border-top: 1px solid $lightGray;
+	p {
+		flex: 1 1 0;
+		width: 45%;
+		&:first-child {
+			padding-right: 0.5em;
+		}
+		&:last-child {
+			padding-left: 0.5em;
+			text-align: right;
+		}
+	}
 }
 
 .wrapper-footer {
