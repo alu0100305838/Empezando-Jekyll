@@ -19,7 +19,7 @@ Menciono un par de ellos, con ejemplos donde se incluyen las fuentes que voy a u
 
 En el sitio **typ.io** ofrecen además numéricos para el uso de *pairings fonts*; transcribo valores CSS sugeridos para *Bebas* y *Lato*, pero cambiaré a *Bebas Neue* para tener dos fuentes existentes en *GoogleFonts*.
 
-```css
+{% highlight css %}
 .header-1 {
     font-family: Bebas, sans-serif;
     font-size: 44px;
@@ -70,7 +70,7 @@ En el sitio **typ.io** ofrecen además numéricos para el uso de *pairings fonts
     text-transform: none;
     color: #000000;
     }
-```
+{% endhighlight %}
 
 NOTA: Quizás use alguno de esos valores como referencia.
 
@@ -85,8 +85,7 @@ Por el momento, visito Google Fonts y genero la siguiente información de enlace
 
 Jekyll usa SASS para procesar los estilos CSS del maquetado del sitio, *tema que no domino aún*. Pero SASS (como LESS y otros) se crearon para simplificar el mantenimiento de los sitios, usando entre otras cosas **variables** que se definen al principio de los archivos **.scss**; la template *Jekyll Now* usa el siguiente archivo `_sass/_variables.scss`
 
-```scss
-
+{% highlight scss %}
 //
 // VARIABLES
 //
@@ -113,7 +112,7 @@ $georgia: Georgia, serif;
     @content;
   }
 }
-```
+{% endhighlight %}
 
 En la sección `Font stacks`  vemos donde deberemos redefinir no sólo las fuentes (pensadas para el entorno Mac OS yo creo), sino cambiar sus nombres... cito lo encontrado en esta página de la que tomo buena parte de mi información =>  [dirk lüsebrink - Google Web Fonts for my Jekyll Sass](http://sebrink.de/Google-Webfonts-for-my-Jekyll/)
 
@@ -121,21 +120,22 @@ En la sección `Font stacks`  vemos donde deberemos redefinir no sólo las fuent
 
 #### redefino variables en _variables.scss
 
-```scss
+{% highlight scss %}
 // google web fonts
-$Headers: 'Bebas Neue', sans-serif; 
+$Headers: 'Bebas Neue', sans-serif;
 $SansSerif: 'Lato', sans-serif;
 // fuentes de sistema
-$Monospace: Monaco, Consolas, "Lucida Console", monospace; 
-```
+$Monospace: Monaco, Consolas, "Lucida Console", monospace;
+{% endhighlight %}
+
 #### cambio definición de code en _highlights.scss
 
-```
+{% highlight scss %}
 code {
   font-family: $Monospace;
   font-size: 0.8em;
 }
-```
+{% endhighlight %}
 
 
 
@@ -147,13 +147,13 @@ Por ahora no pienso ir mucho más allá con el rediseño... no es el ámbito ide
 
 Para ser concreto: además de dar los nuevos nombres a las variables de familia de fuente (`$Headers` y `$SansSerif`), voy a "tocar" algún que otro estilo, nada de mucha consideración:
 
-```
+{% highlight css %}
 h1, h2, h3, h4, h5, h6 {
   ...
   font-weight: normal;
   ...
 }
-  
+
 .site-name {
   ...
   font-size: 44px;
@@ -163,11 +163,11 @@ h1, h2, h3, h4, h5, h6 {
 .post {
   blockquote {
     ...    
-	  em { 
+	  em {
 	    font-style: normal;
 	  }
   }
-```
+{% endhighlight %}
 
 Hasta aquí, los cambios visuales que vamos a aplicar directamente desde Github...
 
@@ -176,6 +176,3 @@ Hasta aquí, los cambios visuales que vamos a aplicar directamente desde Github.
 FUENTE:
 
 + [dirk lüsebrink - Google Web Fonts for my Jekyll Sass](http://sebrink.de/Google-Webfonts-for-my-Jekyll/)
-
-
-

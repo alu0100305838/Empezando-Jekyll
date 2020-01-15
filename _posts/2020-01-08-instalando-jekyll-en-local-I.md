@@ -11,9 +11,9 @@ Como es un detalle importante vinculado a la descripción paso a paso que voy a 
 
 ## ¿Qué se necesita para correr *Jekyll* localmente?
 
-Aunque ya lo hemos mencionado, aquí lo repetimos: *Jekyll* está escrito en **Ruby**, que es un lenguaje de programación. *Jekyll* es el código (programa) que permite crear nuestro website en base a *templates*, *includes*, documentos markdown, estilos SASS, imágenes y demás. 
+Aunque ya lo hemos mencionado, aquí lo repetimos: *Jekyll* está escrito en **Ruby**, que es un lenguaje de programación. *Jekyll* es el código (programa) que permite crear nuestro website en base a *templates*, *includes*, documentos markdown, estilos SASS, imágenes y demás.
 
-Este código (como otros que que deberemos cargar en nuestra máquina) recibe el nombre de ***Gem*** (gema). **Será necesario instalar software que *interprete* esas gemas escritas en *ruby*** para que puedan ejecutar su acción en nuestra computadora; la manera rápida de decirlo es: debemos [instalar *Ruby*](https://www.ruby-lang.org/en/documentation/installation/) (en la versión correspondiente a nuestro sistema operativo). 
+Este código (como otros que que deberemos cargar en nuestra máquina) recibe el nombre de ***Gem*** (gema). **Será necesario instalar software que *interprete* esas gemas escritas en *ruby*** para que puedan ejecutar su acción en nuestra computadora; la manera rápida de decirlo es: debemos [instalar *Ruby*](https://www.ruby-lang.org/en/documentation/installation/) (en la versión correspondiente a nuestro sistema operativo).
 
 > [Ruby](http://www.ruby-lang.org/) es un lenguaje de programación orientado a objetos, interpretado y reflexivo. Fue creado por un japonés llamado Yukihiro Matsumoto en el año 1993 pero lo sacó al público en el '95.  
 >
@@ -25,15 +25,15 @@ Debe señalarse que las *Gems* son administradas a través de un gestor de paque
 
 Antes de instalar *Jekyll* propiamente dicho deberemos contar entonces con:
 
-[Ruby](https://www.ruby-lang.org/en/downloads/) versión  2.4.0  o superior, incluidos todos los encabezados de desarrollo (la  instalación de ruby se puede comprobar ejecutando `ruby -v` , los encabezados de desarrollo pueden verificarse en Ubuntu ejecutando `apt list --installed ruby-dev` ) 
+[Ruby](https://www.ruby-lang.org/en/downloads/) versión  2.4.0  o superior, incluidos todos los encabezados de desarrollo (la  instalación de ruby se puede comprobar ejecutando `ruby -v` , los encabezados de desarrollo pueden verificarse en Ubuntu ejecutando `apt list --installed ruby-dev` )
 
-[RubyGems](https://rubygems.org/pages/download) (que puedes verificar ejecutando `gem -v` ) 
+[RubyGems](https://rubygems.org/pages/download) (que puedes verificar ejecutando `gem -v` )
 
-[GCC](https://gcc.gnu.org/install/) y [Make](https://www.gnu.org/software/make/) (en caso de que su sistema no los tenga instalados, que puede verificar ejecutando `gcc -v` , `g++ -v` y `make -v` en la interfaz de línea de comandos de su sistema) 
+[GCC](https://gcc.gnu.org/install/) y [Make](https://www.gnu.org/software/make/) (en caso de que su sistema no los tenga instalados, que puede verificar ejecutando `gcc -v` , `g++ -v` y `make -v` en la interfaz de línea de comandos de su sistema)
 
 En mi sistema:
 
-```bash
+{% highlight shell %}
 $ ruby -v
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
 $ apt list --installed ruby-dev
@@ -43,14 +43,14 @@ $ gem -v
 2.7.6
 $ gcc -v
 (...)
-gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)
 $ g++ -v
 (...)
-gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)
 $ make -v
 GNU Make 4.1
 (...)
-```
+{% endhighlight %}
 
 ## Usando *Bundler* para instalar *gems*
 
@@ -68,11 +68,11 @@ Veamos, los comandos `bundle cosas` pertenecen al programa [Bundler](http://bund
 
 Para que *Bundler* haga su trabajo, nosotros le decimos en un archivo llamado `Gemfile` qué gemas vamos a usar y en qué versión. Por ejemplo, un `Gemfile` para usar el tema Minima en Jekyll tiene esta pinta:
 
-```
+{% highlight ruby %}
 source "https://rubygems.org"
 gem "jekyll", "3.3.1"
 gem "minima", "~> 2.0"
-```
+{% endhighlight %}
 
 Esto le dice a Bundler dónde buscar las gemas y que use Jekyll 3.3.1 y Minima en una versión [mayor que la 2.0 y menor que la 3.0](https://robots.thoughtbot.com/rubys-pessimistic-operator).
 
@@ -84,14 +84,14 @@ Cuando hacemos `bundle install`, Bundle mira el **Gemfile** e instala lo que deb
 
 Si ya fue instalado Ruby y RubyGems, simplemente hay que usar, como con cualquier gema, el comando `gem install`
 
-```bash
+{% highlight shell %}
 # Instala Bundler gem
 $ gem install bundler
 $ bundle version
 Bundler version 2.1.3 (2020-01-02 commit 14c5584664)
-```
+{% endhighlight %}
 
-De la documentación oficial de Jekyll, extractamos lo siguiente: 
+De la documentación oficial de Jekyll, extractamos lo siguiente:
 
 > `gem install bundler` installs [Bundler](https://rubygems.org/gems/bundler). You only need to install it once — not every time you create a new Jekyll project. Here are some additional details:
 >
@@ -101,7 +101,7 @@ De la documentación oficial de Jekyll, extractamos lo siguiente:
 
 Es necesario para el uso de *Bundler* un archivo **Gemfile** en el directorio raíz de su repositorio local: en el se indicará la lista de gems (y sus versiones) que se usarán al hacer `bundle install`. Un ejemplo de Gemfile puede ser:
 
-```ruby
+{% highlight ruby %}
 source "https://rubygems.org"
 
 gem "jekyll"
@@ -110,7 +110,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
 end
-```
+{% endhighlight %}
 
 ***
 

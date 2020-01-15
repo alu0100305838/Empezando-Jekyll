@@ -14,12 +14,18 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+// TABLAS
+//colors
+$color_alto_approx: #ddd;
+$color_celeste_approx: #ccc;
+$color_desert_storm_approx: #f8f8f8;
+
 // Font stacks
 // google web fonts
-$Headers: 'Bebas Neue', sans-serif; 
+$Headers: 'Bebas Neue', sans-serif;
 $SansSerif: 'Lato', sans-serif;
 // fuentes de sistema
-$Monospace: Monaco, Consolas, "Lucida Console", monospace; 
+$Monospace: Monaco, Consolas, "Lucida Console", monospace;
 
 // Mobile breakpoints
 @mixin mobile {

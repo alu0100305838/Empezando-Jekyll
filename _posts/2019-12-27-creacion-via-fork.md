@@ -20,15 +20,15 @@ Por lo general, la gente bifurca repos para proponer cambios al proyecto origina
 
 En *_config.yml* cambié algunas cosas:
 
-```
+{% highlight yaml %}
 # Name of your site (displayed in the header)
 name: Empezando con Jekyll
 
 # Short bio or description (displayed in the header)
 description: mis primeras notas y docs...
-```
+{% endhighlight %}
 
-Si ahora visitamos la dirección de la subcarpeta donde se verá nuestro sitio, notaremos  que *no se vé* tal como lo esperábamos... las templates, como dijimos, vienen pensadas para trabajar pensando en un *User Website*. 
+Si ahora visitamos la dirección de la subcarpeta donde se verá nuestro sitio, notaremos  que *no se vé* tal como lo esperábamos... las templates, como dijimos, vienen pensadas para trabajar pensando en un *User Website*.
 
 Traduzco lo siguiente:
 
@@ -47,13 +47,13 @@ En este paso vamos a trabajar sobre el archivo más determinante en el comportam
 + Hay cuestiones básicas de configuración sobre el sitio y su autor (o autores, vía *collections*) . Aquí se detallan el nombre del sitio, descripción, etc. Ya lo vimos antes.
 + Para solucionar los problemas de visualización que aparecieron por usar la opción *project website* , la opción **baseurl** [Base URL : Serve the website from the given base URL] debe cambiarse a una que incluya el subdirectorio.
 
-```
+{% highlight yaml %}
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: "/Empezando-Jekyll"
-```
+{% endhighlight %}
 
 > A diferencia de lo que sucedió con la plantilla *Emerald* (usada en un intento anterior, sin final feliz ), la definición de **baseurl** sin  *trailing slash* no generó problemas.
 

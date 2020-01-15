@@ -5,13 +5,13 @@ date: '2020-01-09 22:00:00 -0300'
 tag: GitHub Jekyll-local Git
 ---
 
-Siguiendo en nuestra idea de empezar a trabajar "localmente" en el desarrollo del sitio que ya tenemos funcionando en GitHub, es el momento de hacer una copia de dicho repositorio remoto en nuestra máquina: necesitaremos recurrir al uso de ***git***... 
+Siguiendo en nuestra idea de empezar a trabajar "localmente" en el desarrollo del sitio que ya tenemos funcionando en GitHub, es el momento de hacer una copia de dicho repositorio remoto en nuestra máquina: necesitaremos recurrir al uso de ***git***...
 
 ## Sincronizando repositorios y el uso de *Git*
 
 Una parte del trabajo con *git* está dedicada a los vínculos entre el **repositorio remoto** (en nuestro caso alojado en *GitHub*), y los distintos **repositorios locales** (en principio uno por cada máquina que esté colaborando en un proyecto).
 
-Dado que no tenemos aún los archivos del proyecto en nuestra computadora, debemos **clonar** el repositorio remoto usando *git*. 
+Dado que no tenemos aún los archivos del proyecto en nuestra computadora, debemos **clonar** el repositorio remoto usando *git*.
 
 Pero primero...
 
@@ -21,17 +21,17 @@ Es posible que no hayas usado *git* previamente, pero como el sistema está pens
 
 Es necesario hacer estas cosas **solamente una vez en tu computadora**, y se mantendrán entre actualizaciones. También puedes cambiarlas en cualquier momento volviendo a ejecutar los comandos correspondientes.
 
-```
+{% highlight shell %}
 $ git config --global user.name "dsigno Mint"
 $ git config --global user.email dsigno4all@gmail.com
 $ git config --global color.ui auto
-```
+{% endhighlight %}
 
 Esta última es la opción por defecto (que colorea la salida cuando va a un terminal).
 
 ### Clonando un repositorio existente
 
-Si deseas obtener una copia de un repositorio *Git* existente —por ejemplo, un proyecto en el que te gustaría contribuir— el comando que  necesitas es `git clone`. 
+Si deseas obtener una copia de un repositorio *Git* existente —por ejemplo, un proyecto en el que te gustaría contribuir— el comando que  necesitas es `git clone`.
 
 Cada versión de cada archivo de la historia del proyecto es descargada  por defecto cuando ejecutas `git clone`. De hecho, si el disco de tu servidor se corrompe, puedes usar cualquiera de los clones en cualquiera de los clientes para devolver el servidor  al estado en el que estaba cuando fue clonado (puede que pierdas algunos hooks del lado del servidor y demás, pero toda la información acerca de las versiones estará ahí).
 
@@ -39,28 +39,28 @@ Para empezar, desde el terminal hay que posicionarse en el directorio donde alma
 
 Puedes clonar un repositorio con `git clone [url]`. Por ejemplo, si quieres clonar la librería de *Git* llamada Empezando-Jekyll puedes hacer algo así:
 
-```console
+{% highlight console %}
 $ git clone https://github.com/dsigno/Empezando-Jekyll.git
-```
+{% endhighlight %}
 
 Esto crea un directorio llamado `Empezando-Jekyll`, inicializa un directorio `.git` en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión. Si te metes en el directorio `Empezando-Jekyll`, verás que están los archivos del proyecto listos para ser utilizados. Si quieres clonar el repositorio a un directorio con otro nombre, puedes especificarlo con la siguiente opción de línea de comandos:
 
-```console
+{% highlight console %}
 $ git clone https://github.com/dsigno/Empezando-Jekyll.git mylibgit
-```
+{% endhighlight %}
 
 Ese comando hace lo mismo que el anterior, pero el directorio de destino se llamará `mylibgit`.
 
 Veamos el resultado del comando en acción:
 
-```bash
+{% highlight shell%}
 theRaven@ravennest:~/Shared/GitHub_repos$ git clone https://github.com/dsigno/Empezando-Jekyll.git
 Clonando en 'Empezando-Jekyll'...
 remote: Enumerating objects: 1492, done.
 remote: Total 1492 (delta 0), reused 0 (delta 0), pack-reused 1492
 Recibiendo objetos: 100% (1492/1492), 8.44 MiB | 322.00 KiB/s, listo.
 Resolviendo deltas: 100% (828/828), listo.
-```
+{% endhighlight %}
 
 Esto es lo instalado...
 
@@ -68,13 +68,13 @@ Esto es lo instalado...
 
 Lo primero que conviene es "mirar" con `git status`
 
-```bash
+{% highlight shell%}
 theRaven@ravennest:~/Shared/GitHub_repos/Empezando-Jekyll$ git status
 En la rama gh-pages
 Tu rama está actualizada con 'origin/gh-pages'.
 
 nada para hacer commit, el árbol de trabajo esta limpio
-```
+{% endhighlight %}
 
 En este momento ambos repositorios están sincronizados...
 
@@ -90,37 +90,38 @@ Voy a probar, en cambio, agregar una imagen (la que ves un poco más arriba en e
 
 + Realizo un nuevo `git status`  
 
-    ```bash
+  {% highlight bash %}
 $ git status
     En la rama gh-pages
     Tu rama está actualizada con 'origin/gh-pages'.
-    
+
     Archivos sin seguimiento:
       (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
-    
+
     	images/clone-results.PNG
-    
+
     no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
-    ```
+  {% endhighlight %}
 
 + Lo bueno de *git* es que nos dá muchos tips de ayuda... nos avisa que tendremos que agregar el nuevo archivo al grupo de los que llevan seguimiento (normalmente si no hay necesidad de seguimiento se los indica en `.gitignore`)
 
-    ```bash
+  {% highlight shell %}
 $ git add images/clone-results.PNG
     $ git status
     En la rama gh-pages
     Tu rama está actualizada con 'origin/gh-pages'.
-    
+
     Cambios a ser confirmados:
       (usa "git reset HEAD <archivo>..." para sacar del área de stage)
-    
+
     	nuevo archivo:  images/clone-results.PNG
-    ```
-	El `git add`  trabaja "silenciosamente" ; para ver los resultados repetimos `git status` y nos avisa que ya está en la *staging area* (área de preparación). Falta confirmar vía `git commit`  nuestra decisión.
-	
+  {% endhighlight %}
+
+El `git add`  trabaja "silenciosamente" ; para ver los resultados repetimos `git status` y nos avisa que ya está en la *staging area* (área de preparación). Falta confirmar vía `git commit`  nuestra decisión.
+
 + Confirmamos entonces al archivo imagen... junto con cualquier otro cambio presente en la *staging area* (en nuestro caso no hay nada más).
-	
-	```bash
+
+	{% highlight shell %}
 	$ git commit -m "agrego imagen sobre clonado"
 	[gh-pages 6307318] agrego imagen sobre clonado
 	 1 file changed, 0 insertions(+), 0 deletions(-)
@@ -129,16 +130,16 @@ $ git add images/clone-results.PNG
 	En la rama gh-pages
 	Tu rama está adelantada a 'origin/gh-pages' por 1 commit.
 	  (usa "git push" para publicar tus commits locales)
-	
+
 	nada para hacer commit, el árbol de trabajo esta limpio
-	```
-	
+	{% endhighlight %}
+
 + Hasta este momento, todo lo que ha hecho está en su sistema local pero invisible para su repositorio de GitHub hasta que empuje (*push*) esos cambios (diríamos *subir* los cambios).  
 
-    ```bash
+  {% highlight shell %}
     $ git push origin gh-pages
     Username for 'https://github.com': dsigno
-    Password for 'https://dsigno@github.com': 
+    Password for 'https://dsigno@github.com':
     Contando objetos: 4, listo.
     Delta compression using up to 4 threads.
     Comprimiendo objetos: 100% (4/4), listo.
@@ -147,9 +148,9 @@ $ git add images/clone-results.PNG
     remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
     To https://github.com/dsigno/Empezando-Jekyll.git
        bbdd084..6307318  gh-pages -> gh-pages
-    ```
+  {% endhighlight %}
 
-    Su *commit* ahora está en el repositorio remoto (origen), en la rama *gh-pages*.
+  Su *commit* ahora está en el repositorio remoto (origen), en la rama *gh-pages*.
 
 > Si visualizamos el repositorio en *GitHub* veremos reflejado este trabajo que realizamos primero en "local": no sólo aparece el archivo de la imagen sino también el mensaje del *commit* y el *commit ID*.
 
@@ -173,7 +174,7 @@ El comando `git fetch ` nos va a permitir recuperar todos los ficheros de un rep
 
 [`Git fetch`](https://git-scm.com/docs/git-fetch) tan sólo recupera la información del repositorio remoto y **la ubica en una rama oculta de tu repositorio local**, por lo que no la fusionará automáticamente con tu repositorio local. En este caso tenemos que saber que por cada repositorio remoto que tengamos configurado también tendremos una rama oculta de este.
 
-```bash
+{% highlight shell %}
 $ git fetch
 remote: Enumerating objects: 12, done.
 remote: Counting objects: 100% (12/12), done.
@@ -188,18 +189,18 @@ Tu rama está detrás de 'origin/gh-pages' por 3 commits, y puede ser avanzada r
   (usa "git pull" para actualizar tu rama local)
 
 nada para hacer commit, el árbol de trabajo esta limpio
-```
+{% endhighlight %}
 
 Y como último paso vamos a fusionar esta rama  con la rama local en la que estamos trabajando actualmente y para ello necesitamos hacer uso del comando `git merge`.
 
-```bash
+{% highlight shell %}
 $ git merge origin/gh-pages
 Actualizando 6307318..524dc14
 Fast-forward
  _posts/2020-01-09-Git-para-crear-modo-local.md | 164 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 164 insertions(+)
  create mode 100644 _posts/2020-01-09-Git-para-crear-modo-local.md
-```
+{% endhighlight %}
 
 
 
@@ -217,7 +218,7 @@ El comando `git pull` es un atajo o una forma de abreviar todos los procesos que
 NOTA: También nos puede ocasionar algún disgusto por lo que en proyectos grandes quizás sea mejor comprobar antes dichos cambios hacia una rama alternativa.
 
 
-```
+{% highlight shell %}
 $ git pull
 remote: Enumerating objects: 4, done.
 remote: Counting objects: 100% (4/4), done.
@@ -230,7 +231,7 @@ Actualizando 524dc14..2975eb2
 Fast-forward
  _posts/2020-01-09-Git-para-crear-modo-local.md | 65 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 65 insertions(+)
-```
+{% endhighlight %}
 
 ## Para cerrar...
 

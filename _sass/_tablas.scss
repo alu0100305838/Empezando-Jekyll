@@ -1,0 +1,84 @@
+
+//
+// TABLAS STYLE (https://codepen.io/AllThingsSmitty/pen/MyqmdM)
+//
+
+
+
+table {
+	border: 1px solid $color_celeste_approx;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+	caption {
+		font-size: 1.5em;
+		margin: .5em 0 .75em;
+	}
+	tr {
+		background-color: $color_desert_storm_approx;
+		border: 1px solid $color_alto_approx;
+		padding: .35em;
+	}
+	th {
+		padding: .625em;
+		text-align: center;
+		font-size: .85em;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+	}
+	td {
+		padding: .625em;
+		text-align: center;
+	}
+}
+@media screen and(max-width: 600px) {
+	table {
+		border: 0;
+		caption {
+			font-size: 1.3em;
+		}
+		thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+		tr {
+			border-bottom: 3px solid $color_alto_approx;
+			display: block;
+			margin-bottom: .625em;
+		}
+		td {
+			border-bottom: 1px solid $color_alto_approx;
+			display: block;
+			font-size: .8em;
+			text-align: right;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+		td::before {
+			content: attr(data-label);
+			float: left;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+}
+.post-nav p {
+	flex: 1 1 0;
+	width: 45%;
+	&:first-child {
+		padding-right: 0.5em;
+	}
+	&:last-child {
+		padding-left: 0.5em;
+		text-align: right;
+	}
+}
