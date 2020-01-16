@@ -3,16 +3,26 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  {% for post in paginator.posts %}
+  <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer Más</a>
+  </article>
   {% endfor %}
+
+  <nav class="post-nav">
+    {% if paginator.next_page %}
+      <p><a href="{{ site.baseurl }}{{ paginator.next_page_path }}">Más antiguo</a></p>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+      <p><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Más nuevo</a></p>
+    {% endif %}
+  </nav>
 </div>

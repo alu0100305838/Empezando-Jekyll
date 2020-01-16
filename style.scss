@@ -231,7 +231,7 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $Headers;
-  font-size: 18px;
+  font-size: 1.222em;
 
   @include mobile {
     float: none;
@@ -296,11 +296,14 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+  float: none;
 	margin-top: 2em;
 	border-top: 1px solid $lightGray;
 	p {
 		flex: 1 1 0;
 		width: 45%;
+    font-family: $Headers;
+    font-size: 1.222em;
 		&:first-child {
 			padding-right: 0.5em;
 		}

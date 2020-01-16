@@ -124,7 +124,7 @@ A) código HTML a insertar en su *post layout file*
 
 B) código CSS para los links
 
-```css
+{% highlight css %}
 .post-nav {
     display: flex;
     justify-content: space-between;
@@ -144,7 +144,7 @@ B) código CSS para los links
     padding-left: 0.5em;
     text-align: right;
 }
-```
+{% endhighlight %}
 
 ### Probando la solución
 
@@ -171,7 +171,7 @@ Como suele pasar, *anda pero no del todo*.  La solución no contempla la variabl
 
 Por último, un leve cambio visual en la parte superior de los links, y el cambio de CSS a SCSS en los estilos:
 
-```scss
+{% highlight scss %}
 .post-nav {
 	display: flex;
 	justify-content: space-between;
@@ -190,7 +190,7 @@ Por último, un leve cambio visual en la parte superior de los links, y el cambi
 		}
 	}
 }
-```
+{% endhighlight %}
 
 **¡Eureka!** Ya tenemos los links PREV y NEXT funcionando en nuestros posts...
 
