@@ -8,6 +8,8 @@ layout: default
 
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+    {% include date_es.html date=post.date time-attributes='class="post-date"' %}
+
     <div class="entry">
       {{ post.excerpt }}
     </div>
