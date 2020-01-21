@@ -409,14 +409,16 @@ a.list-group-item {
 }
 h4.list-group-item-heading {
   color: $blue;
-  padding: 0 15px 15px;
+  padding: 0 0 15px 15px;
   margin: 15px 0 0;
+  flex:auto;
 }
 p.list-group-item-date {
   font-family: $Headers;
   font-size: 22px;
-  padding: 0 15px 15px 0;
+  padding: 0 15px 15px;
   margin: 18px 0 0;
+  flex:initial;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
