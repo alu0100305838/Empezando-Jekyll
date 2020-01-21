@@ -2,7 +2,8 @@
 layout: post
 title: Un leve cambio de look (II)
 date: 2020-01-03 12:00:00 -0300
-tag: GitHub
+category: github-pages
+tags: [github]
 ---
 
 Ya empezamos un leve cambio estético en nuestro blog basado en *Jekyll Now* ; nuestro próximo objetivo  —y más relevante— es personalizar las tipografías del sitio.

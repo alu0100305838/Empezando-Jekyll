@@ -2,10 +2,11 @@
 layout: post
 title: Git, GitHub y Github Pages (algunos conceptos)
 date: 2020-01-07 02:00:00 -0300
-tag: GitHub Git
+category: github-pages
+tags: [github, git]
 ---
 
-En el post anterior anticipamos lo necesario que es dar una breve conceptualización sobre algunos temas (poco más que una presentación) para poder avanzar en nuestro trabajo. 
+En el post anterior anticipamos lo necesario que es dar una breve conceptualización sobre algunos temas (poco más que una presentación) para poder avanzar en nuestro trabajo.
 
 Ya hablamos sobre *Jekyll* y sus opciones al momento de generar un sitio web estático; ahora le toca el turno a Git, GitHub y Github Pages y su importante papel en el *ecosistema Jekyll*.
 
@@ -27,7 +28,7 @@ En el diagrama a continuación, cada etapa representa un nuevo "**guardar**". Si
 
 ![git basics]({{site.baseurl}}/images/git-basics.png)
 
-Con *Git*, **el flujo es multidireccional**. Cada cambio que es significativo se marca como importante en una versión, y continúa. Si necesita volver a las etapas anteriores, puede hacerlo sin ninguna pérdida de datos. Actualmente, el "historial de revisiones" de *Google Docs* o el "historial de edición" de Wikipedia funcionan de esta manera. *Git* es mucho más detallado y puede ser mucho más complejo si es necesario. 
+Con *Git*, **el flujo es multidireccional**. Cada cambio que es significativo se marca como importante en una versión, y continúa. Si necesita volver a las etapas anteriores, puede hacerlo sin ninguna pérdida de datos. Actualmente, el "historial de revisiones" de *Google Docs* o el "historial de edición" de Wikipedia funcionan de esta manera. *Git* es mucho más detallado y puede ser mucho más complejo si es necesario.
 
 ### GitHub
 
@@ -47,7 +48,7 @@ NOTA: Existen servicios similares (aunque menos conocidos) como *Netlify*, y la 
 
 ## Sólo un pantallazo...
 
-Tanto este post como el anterior dedicado a *Jekyll*  tienen la finalidad de presentar las herramientas que estamos empleando y/o vamos a emplear para la construcción y transformación de este mismo blog. 
+Tanto este post como el anterior dedicado a *Jekyll*  tienen la finalidad de presentar las herramientas que estamos empleando y/o vamos a emplear para la construcción y transformación de este mismo blog.
 
 Especialmente lo vinculado al uso de ***git*** requiere desde lo conceptual a lo procedimental al menos recopilar algunas fuentes de aprendizaje de las muchas que hay en la web.
 

@@ -14,7 +14,11 @@ layout: default
       {{ post.excerpt }}
     </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer Más</a>
+    <footer class="excerpt-foot">
+      {% include tags_en_index.html %}
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer Más</a>
+    </<footer>
   </article>
   {% endfor %}
 

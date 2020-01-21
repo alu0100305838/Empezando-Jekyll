@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My first post!
+category: jekyll
 ---
 
 ## Mi primer post...

@@ -2,7 +2,8 @@
 layout: post
 title: Jekyll (algunos conceptos)
 date: '2020-01-05 22:00:00 -0300'
-tag: GitHub Jekyll-local Git
+category: jekyll
+tags: [github, jekyll-local, git]
 published: true
 ---
 

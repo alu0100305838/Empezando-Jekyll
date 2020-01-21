@@ -1,0 +1,23 @@
+{% comment %}
+=======================
+The purpose of this snippet is to list all the tags de este post
+=======================
+{% endcomment %}
+
+<ul class="tags">
+{% if page.tags.size > 0 %}
+
+  {% for post_tag in page.tags %}
+    {% assign tag = site.my_tags | where: "slug", post_tag %}
+    {% if tag %}
+      {% assign tag = tag[0] %}
+      {% capture tags_content_temp %}
+      {{ tags_content }}<li class="tag"><a href="{{ site.baseurl }}{{ tag.url }}">{{ tag.name }}</a></li>
+      {% endcapture %}
+      {% assign tags_content = tags_content_temp %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{{ tags_content }}
+</ul>

@@ -2,7 +2,8 @@
 layout: post
 title: Conociendo Prose
 date: '2019-12-28 06:00:00 -0300'
-tag: GitHub
+category: github-pages
+tags: [github]
 ---
 Hay 3 formas diferentes de realizar cambios en los archivos de tu blog:
 
@@ -14,7 +15,7 @@ Voy a probar esta vez con la segunda opción, es decir, trabajar con **Prose**, 
 
 ## ¿Cómo usar Prose?
 
-Por ser una herramienta "de terceros", deberemos darle permisos para acceder a nuestros datos en GitHub, tanto en lectura como en edición. 
+Por ser una herramienta "de terceros", deberemos darle permisos para acceder a nuestros datos en GitHub, tanto en lectura como en edición.
 
 ![Prose01]({{site.baseurl}}/images/Prose.PNG)
 
@@ -46,5 +47,3 @@ Si en nuestros posts necesitamos insertar imágenes, `Prose` lo facilita mediant
 ## Para terminar
 
 **Prose** parece una muy buena opción para quienes no conozcan aún los entresijos de markdown, y facilita el workflow  involucrado con la escritura de posts.
-
-

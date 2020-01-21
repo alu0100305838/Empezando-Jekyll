@@ -2,7 +2,8 @@
 layout: post
 title: Añadir paginación al sitio
 date: 2020-01-16 03:00:00 -0300
-tag: Jekyll-plugin
+category: jekyll
+tags: [jekyll-plugin]
 ---
 
 La plantilla (o *Theme*) *Jekyll Now!* es una plantilla muy simple, ideal para quien empieza un blog sin demasiados conocimientos sobre *Jekyll*. Pero al empezar a acumularse varios *posts* se empieza a extrañar una característica bastante común en cualquier página principal de un Blog: la división en páginas de la lista total de artículos del blog... estamos hablando de **paginación**.

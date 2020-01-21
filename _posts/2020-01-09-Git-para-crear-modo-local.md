@@ -2,7 +2,8 @@
 layout: post
 title: Git para crear modo local
 date: '2020-01-09 22:00:00 -0300'
-tag: GitHub Jekyll-local Git
+category: github-pages
+tags: [github, jekyll-local, git]
 ---
 
 Siguiendo en nuestra idea de empezar a trabajar "localmente" en el desarrollo del sitio que ya tenemos funcionando en GitHub, es el momento de hacer una copia de dicho repositorio remoto en nuestra máquina: necesitaremos recurrir al uso de ***git***...

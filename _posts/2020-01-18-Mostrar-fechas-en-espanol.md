@@ -2,7 +2,8 @@
 layout: post
 title: Mostrar fechas en español
 date: 2020-01-18 08:00:00 -0300
-tag: Jekyll-enhancement
+category: jekyll
+tags: [jekyll-enhancement]
 ---
 Quizás pueda parecer un tema menor o accesorio, pero lo cierto es que en la implementación de las *GitHub Pages* (y su limitado juego de *plugins*) no se ha tenido suficiente consideración con los idiomas —que no sea el inglés, *of course*—, y particularmente sobre un punto: **el formato en que se muestran las fechas de los posts**...
 
@@ -67,7 +68,7 @@ De los casos mostrados, únicamente el último (que usa sólo números) puede ll
 
 Pero también aparece una opción en principio más compleja, pensada para el idioma alemán, que paso a mostrar:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 
 <!-- Whitespace added for readability -->
@@ -196,7 +197,7 @@ En nuestro caso el archivo —que deberemos crear— será `_includes/date_es.ht
 
 Es buen momento de presentar el contenido del archivo `date_es.html`, que se encargará de generar el contenido encerrado entre etiquetas `time`, como ya vimos:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 <time
   datetime="{{ include.date }}"

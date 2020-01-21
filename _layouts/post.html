@@ -1,19 +1,28 @@
 ---
 layout: default
 ---
+{% assign mipost = page %}
 
 <article class="post">
   <h1>{{ page.title }}</h1>
 
   {% include date_es.html date=page.date time-attributes=' class="post-date"' %}
 
+  {% include tags_en_post.html %}
+
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Escrito el {% include date_es.html date=page.date %}
-  </div>
+  <footer class="post-foot">
+
+    {% include category_en_post.html %}
+
+    <div class="date">
+      Escrito el {% include date_es.html date=page.date %}
+    </div>  
+
+  </footer>
 
   <div class="post-nav">
     <p>
@@ -29,4 +38,6 @@ layout: default
   </div>
 
   {% include disqus.html %}
+
+
 </article>

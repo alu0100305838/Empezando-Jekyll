@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Consideraciones previas
-tag: GitHub
+category: github-pages
+tags: [github]
 ---
 
-Al empezar a investigar sobre la implementación de sitios usando Jekyll lo primero que impacta es la abrumadora cantidad de información –oficial y no–, tutoriales, videos... 
+Al empezar a investigar sobre la implementación de sitios usando Jekyll lo primero que impacta es la abrumadora cantidad de información –oficial y no–, tutoriales, videos...
 
 Me parece que lo primero que conviene que tengamos en claro es que hay muchas maneras de empezar un sitio, especialmente si vamos a usar GitHub como hospedaje, pero las podemos agrupar en tres.
 

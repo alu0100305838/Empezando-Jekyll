@@ -2,7 +2,8 @@
 layout: post
 title: Creación vía fork | Paso a paso
 date: 2019-12-27 11:00:00 -0300
-tag: GitHub
+category: github-pages
+tags: [github]
 ---
 
 

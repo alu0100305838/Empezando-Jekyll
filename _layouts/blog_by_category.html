@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<header class="">
+  <h1 class=""><small>Entradas en la categoría: </small>{{ page.name }}</h1>
+</header>
+
+<div class="container">
+  {% if site.categories[page.slug] %}
+    {% for post in site.categories[page.slug] %}
+      {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% if forloop.first %}
+        <h3 class="year">{{ post_year }}</h3>
+        <div class="list-group">
+      {% endif %}
+      {% unless forloop.first %}
+        {% assign previous_index = forloop.index0 | minus: 1 %}
+        {% capture previous_post_year %}{{ site.categories[page.slug][previous_index].date | date: '%Y' }}{% endcapture %}
+        {% if post_year != previous_post_year %}
+        </div>
+        <h3 class="year">{{ post_year }}</h3>
+        <div class="list-group">
+        {% endif %}
+      {% endunless %}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item">
+        <h4 class="list-group-item-heading">{{ post.title }}</h4>
+        </a>
+      {% if forloop.last %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <p>No existen posts para esta categoría.</p>
+  {% endif %}
+</div>

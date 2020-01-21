@@ -124,17 +124,13 @@ hr {
   color: $lightGray;
 }
 
+small {
+  font-size: .75em;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-  text-align: right;
-  padding: 15px 15px 0;
-  border-top: 1px solid $lightGray;
 }
 
 // Specify the color of the selection
@@ -275,6 +271,7 @@ nav {
 
   h1 {
     margin-top: 0em;
+    margin-bottom: 10px;
     padding-top: .75em;
     border-top: .25em solid $blue;
   }
@@ -340,6 +337,45 @@ nav {
 	}
 }
 
+.excerpt-foot, .post-foot {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  float: none;
+  padding: 0;
+  margin-top: 1.5em;
+}
+.excerpt-foot {
+	ul, a.read-more {
+		flex: auto;
+  }
+  ul {
+    width:70%;
+  }
+  a.read-more {
+    width: 20%;
+  }
+}
+
+.post-foot { border-top: 1px solid $lightGray;
+  p, div.date {
+		flex: auto;
+    width: 50%;
+    color: $gray;
+  }
+  p.post-cat {
+    font-style: italic;
+    text-align: left;
+    padding-left: 15px;
+  }
+  div.date {
+    width: 50%;
+    font-style: italic;
+    text-align: right;
+    padding: 15px 15px 0;
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -357,8 +393,35 @@ article h1 {
   color: $blue;
 }
 
+// estilos para by tag & by category
+h3.year {
+  padding: 0 15px 15px;
+  margin: 15px 0 0;
+  border-bottom: 4px solid $gray;
+}
+a.list-group-item {
+  display: block;
+  border-bottom: 4px solid $gray;
+  display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  float: none;
+}
+h4.list-group-item-heading {
+  color: $blue;
+  padding: 0 15px 15px;
+  margin: 15px 0 0;
+}
+p.list-group-item-date {
+  font-family: $Headers;
+  font-size: 22px;
+  padding: 0 15px 15px 0;
+  margin: 18px 0 0;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
 @import "tablas";
+@import "etiquetas";

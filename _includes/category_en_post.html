@@ -1,0 +1,19 @@
+{% comment %}
+=======================
+The purpose of this snippet is mostrar la categoría para de este post
+=======================
+{% endcomment %}
+
+{% for post_cat in page.category %}
+  {% assign category = site.my_categories | where: "slug", post_cat %}
+  {% if category %}
+    {% assign category = category[0] %}
+    {% capture category_content %}
+    <a class="label" href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+    {% endcapture %}
+  {% endif %}
+{% endfor %}
+
+<p class="post-cat">
+  {% if category_content %}Post en Categoría: {{ category_content }}{% endif %}
+</p>

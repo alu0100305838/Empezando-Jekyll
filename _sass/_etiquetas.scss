@@ -1,0 +1,111 @@
+/*- etiquetas https://codepen.io/wbeeftink/pen/dIaDH -*/
+
+// -- Put custom style under this point -- //
+//colors
+
+$black_25: rgba(0, 0, 0, 0.25);
+
+.tags {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	li {
+		float: left;
+	}
+}
+
+.tag {
+  font-size: .778em;
+  font-weight: bold;
+	background: $blue;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px 0 0 3px;
+	color: $white;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 20px 0 23px;
+	position: relative;
+	margin: 0 10px 0 0;
+	text-decoration: none;
+	&:hover, &:active, &:focus {
+		background-color: $lightGray;
+		color: $blue;
+		text-decoration: none;
+	}
+	&:hover::after {
+		border-left-color: $lightGray;
+	}
+}
+.tag-archive-font {
+	font-size: 13px;
+}
+.tag::before {
+	background: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 10px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 1px $black_25;
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+}
+.tag::after {
+	background: $white;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid $blue;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.tag a {
+  color:$white;
+}
+.tag a:hover {
+  color:$blue;
+}
+.tag a:hover::after {
+  color:$blue;
+}
+
+footer .post-cat .label {
+	background-color: $jekyll;
+	border-radius: 3px 0 0 3px;
+	color: $white;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	padding: 1px 20px 0 23px;
+	position: relative;
+	margin: 0 10px;
+	text-decoration: none;
+	font-family: $Headers;
+	font-style: normal;
+}
+footer .post-cat .label::before {
+	background: $white;
+	border-radius: 10px;
+	box-shadow: inset 0 1px $black_25;
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+}
+footer .post-cat .label::after {
+	background: $white;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid $jekyll;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+}

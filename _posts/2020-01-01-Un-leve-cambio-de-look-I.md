@@ -2,7 +2,8 @@
 layout: post
 title: Un leve cambio de look (I)
 date: 2020-01-01 22:00:00 -0300
-tag: GitHub
+category: github-pages
+tags: [github]
 ---
 
 Nuestro sitio basado en *Jekyll Now* está funcionando por ahora de manera más que aceptable, así que es un buen momento de intentar un cambio visual: vamos modificar el logo del sitio, a agregar un favicon.ico  y a  personalizar las tipografías del sitio.

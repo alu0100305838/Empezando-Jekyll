@@ -2,7 +2,8 @@
 layout: post
 title: Instalando Jekyll en local (I)
 date: 2020-01-08 23:00:00 -0300
-tag: Jekyll-local
+category: jekyll
+tags: [jekyll-local]
 ---
 
 El hecho de trabajar "en local" nos significará mucha comodidad y aumento de velocidad al momento de desarrollar nuestro sitio *Jekyll*, pero como contrapartida, deberemos lidiar con la instalación de determinados componentes de software: de esta cuestión hablaremos en estos posts.

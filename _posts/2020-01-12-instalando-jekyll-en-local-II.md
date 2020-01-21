@@ -2,7 +2,8 @@
 layout: post
 title: Instalando Jekyll en local (II)
 date: 2020-01-12 15:00:00 -0300
-tag: Jekyll-local
+category: jekyll
+tags: [jekyll-local]
 ---
 
 Continuamos ahora con la segunda parte de la descripción del proceso de instalación de *Jekyll* en nuestras computadoras, de manera de generar nuestro sitio estático en modo local, y permitir así probar los cambios antes de subirlos a *GitHub*.
