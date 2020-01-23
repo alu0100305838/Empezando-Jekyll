@@ -213,10 +213,10 @@ Ya hablaremos del tema ramas en *git* en un próximo post.
 
 FUENTES
 
-[Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
++ [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 
-[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll#step-2-install-jekyll-using-bundler)
++ [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll#step-2-install-jekyll-using-bundler)
 
-[Creating a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-your-site) —desde cero—
++ [Creating a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-your-site) —desde cero—
 
-[HTML::Pipeline dependences](https://github.com/jch/html-pipeline#dependencies)
++ [HTML::Pipeline dependences](https://github.com/jch/html-pipeline#dependencies)

@@ -247,10 +247,10 @@ Falta dedicar algún resumen ampliatorio sobre la filosofía de trabajo con *Git
 
 FUENTES
 
-[2.1 Fundamentos de Git - Obteniendo un repositorio Git](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git)
++ [2.1 Fundamentos de Git - Obteniendo un repositorio Git](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git)
 
-[What is the difference between pull and clone in git?](https://stackoverflow.com/questions/3620633/what-is-the-difference-between-pull-and-clone-in-git)
++ [What is the difference between pull and clone in git?](https://stackoverflow.com/questions/3620633/what-is-the-difference-between-pull-and-clone-in-git)
 
-[git fetch y git pull, Diferencias y formas de uso](https://blog.artegrafico.net/git-fetch-y-git-pull-diferencias-y-formas-de-uso)
++ [git fetch y git pull, Diferencias y formas de uso](https://blog.artegrafico.net/git-fetch-y-git-pull-diferencias-y-formas-de-uso)
 
-[¿Por qué “git diff” no funciona sin antes hacer un “git fetch”?](https://es.stackoverflow.com/questions/196396/por-qué-git-diff-no-funciona-sin-antes-hacer-un-git-fetch)
++ [¿Por qué “git diff” no funciona sin antes hacer un “git fetch”?](https://es.stackoverflow.com/questions/196396/por-qué-git-diff-no-funciona-sin-antes-hacer-un-git-fetch)

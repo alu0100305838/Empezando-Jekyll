@@ -160,10 +160,10 @@ Esto es todo por ahora, faltaría mejorar lo mostrado agregando al menos la fech
 
 FUENTES
 
-[Liquid](https://shopify.github.io/liquid/)
++ [Liquid](https://shopify.github.io/liquid/)
 
-[Jekyllrb - Pagination](https://jekyllrb.com/docs/pagination/)
++ [Jekyllrb - Pagination](https://jekyllrb.com/docs/pagination/)
 
-[Jekyll Pagination](https://blog.webjeda.com/jekyll-pagination/)
++ [Jekyll Pagination](https://blog.webjeda.com/jekyll-pagination/)
 
-[Crea tu propia página o blog gratis con Jekyll y Github: Parte 2 - Publicando posts](https://www.campusmvp.es/recursos/post/crea-tu-propia-pagina-o-blog-gratis-con-jekyll-y-github-parte-2-publicando-posts.aspx)
++ [Crea tu propia página o blog gratis con Jekyll y Github: Parte 2 - Publicando posts](https://www.campusmvp.es/recursos/post/crea-tu-propia-pagina-o-blog-gratis-con-jekyll-y-github-parte-2-publicando-posts.aspx)

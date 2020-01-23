@@ -257,16 +257,16 @@ Para una completa comprensión de lo expuesto en este *post*, sugiero visitar lo
 
 FUENTES
 
-[Liquid](https://shopify.github.io/liquid/)
++ [Liquid](https://shopify.github.io/liquid/)
 
-[ES Liquid para diseñadores](https://github.com/Shopify/liquid/wiki/ES-Liquid-para-diseñadores)
++ [ES Liquid para diseñadores](https://github.com/Shopify/liquid/wiki/ES-Liquid-para-diseñadores)
 
-[Jekyllrb - Liquid](https://jekyllrb.com/docs/liquid/)
++ [Jekyllrb - Liquid](https://jekyllrb.com/docs/liquid/)
 
-[Jekyll Date Formatting Examples](http://alanwsmith.com/jekyll-liquid-date-formatting-examples)
++ [Jekyll Date Formatting Examples](http://alanwsmith.com/jekyll-liquid-date-formatting-examples)
 
-[Conversión de fecha a formato español sin plugins](https://bujonodi.github.io/jekyll/jekyll/update/2017/05/07/date-es.html)
++ [Conversión de fecha a formato español sin plugins](https://bujonodi.github.io/jekyll/jekyll/update/2017/05/07/date-es.html)
 
-[Jekyll - fechas en español](https://dmts.es/post/jekyll-fechas-en-espaol/)
++ [Jekyll - fechas en español](https://dmts.es/post/jekyll-fechas-en-espaol/)
 
-[Using Jekyll _includes as custom liquid functions](https://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/)
++ [Using Jekyll _includes as custom liquid functions](https://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/)

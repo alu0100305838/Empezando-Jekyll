@@ -109,7 +109,7 @@ De cualquier manera,  ambas maneras involucran una gran componente de programaci
 
 Dejo a consideración alguna de las fuentes de información sobre la implementación del sistema de *tagging* que miré para escribir este *post*...
 
-
+***
 
 FUENTES
 

@@ -51,6 +51,6 @@ En lo personal voy a trabajar en un "entorno local" que implimentaré en una má
 
 FUENTES:
 
-[Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)
++ [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)
 
-[Jekyll Plugins on GitHub](https://www.sitepoint.com/jekyll-plugins-github/)
++ [Jekyll Plugins on GitHub](https://www.sitepoint.com/jekyll-plugins-github/)
