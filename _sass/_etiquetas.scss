@@ -88,6 +88,10 @@ footer .post-cat .label {
 	font-family: $Headers;
 	font-style: normal;
 }
+footer .post-cat .label:hover {
+	background: $jekyll;
+	color: $blue;
+}
 footer .post-cat .label::before {
 	background: $white;
 	border-radius: 10px;

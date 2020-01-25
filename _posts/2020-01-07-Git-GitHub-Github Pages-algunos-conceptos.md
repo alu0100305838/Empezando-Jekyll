@@ -61,3 +61,4 @@ Esta es la metodología de trabajo que vamos a seguir de aquí en más. A medida
 FUENTES:
 
 + [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)
+{: .fuentes}

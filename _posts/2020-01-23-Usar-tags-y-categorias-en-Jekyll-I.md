@@ -119,3 +119,4 @@ FUENTES
 + [Jekyll Tags on Github Pages](https://longqian.me/2017/02/09/github-jekyll-tag/)
 + [Use Tags and Categories in your Jekyll based Github (cached)](http://webcache.googleusercontent.com/search?q=cache:http://ju.outofmemory.cn/entry/132959)
 + [Alphabetizing Jekyll Page Tags In Pure Liquid (Without Plugins)](https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html)
+{: .fuentes}

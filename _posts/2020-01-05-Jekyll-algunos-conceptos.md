@@ -54,3 +54,4 @@ FUENTES:
 + [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)
 
 + [Jekyll Plugins on GitHub](https://www.sitepoint.com/jekyll-plugins-github/)
+{: .fuentes}

@@ -220,3 +220,4 @@ FUENTES
 + [Creating a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-your-site) —desde cero—
 
 + [HTML::Pipeline dependences](https://github.com/jch/html-pipeline#dependencies)
+{: .fuentes}

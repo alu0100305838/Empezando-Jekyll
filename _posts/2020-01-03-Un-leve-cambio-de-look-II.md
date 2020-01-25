@@ -177,3 +177,4 @@ Hasta aquí, los cambios visuales que vamos a aplicar directamente desde Github.
 FUENTE:
 
 + [dirk lüsebrink - Google Web Fonts for my Jekyll Sass](http://sebrink.de/Google-Webfonts-for-my-Jekyll/)
+{: .fuentes}

@@ -254,3 +254,4 @@ FUENTES
 + [git fetch y git pull, Diferencias y formas de uso](https://blog.artegrafico.net/git-fetch-y-git-pull-diferencias-y-formas-de-uso)
 
 + [¿Por qué “git diff” no funciona sin antes hacer un “git fetch”?](https://es.stackoverflow.com/questions/196396/por-qué-git-diff-no-funciona-sin-antes-hacer-un-git-fetch)
+{: .fuentes}

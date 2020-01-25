@@ -96,6 +96,40 @@ ul {
   list-style-type: disc;
 }
 
+ul.fuentes {
+  padding-left: 10px;
+}
+
+ul.fuentes li {
+  list-style-type: none;
+  padding-left:28px;
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  background-image:
+  url("data:image/svg+xml;utf8,<svg width='22' height='22' xmlns='http://www.w3.org/2000/svg'><g><title>background</title><rect fill='none' id='canvas_background' height='22' width='22' y='-1' x='-1'/></g><g><title>Layer 1</title><path fill='%234183C4' id='svg_1' d='m16.483208,10.474007l0,-6.13423c0,-0.221087 -0.080511,-0.412782 -0.242813,-0.575085s-0.353996,-0.242813 -0.575083,-0.242813l-6.134233,0c-0.357828,0 -0.609588,0.166137 -0.753998,0.498407c-0.144411,0.348885 -0.085624,0.647928 0.178914,0.894576l1.840271,1.840269l-6.824333,6.824329c-0.162301,0.162301 -0.242813,0.353995 -0.242813,0.575085s0.080512,0.412784 0.242813,0.575086l1.303523,1.303523c0.162303,0.162302 0.353998,0.242815 0.575085,0.242815s0.412782,-0.080513 0.575085,-0.242815l6.824331,-6.824331l1.840273,1.840268c0.153356,0.162302 0.345051,0.242815 0.575083,0.242815c0.102238,0 0.208305,-0.021725 0.319489,-0.063898c0.332271,-0.144409 0.498406,-0.39617 0.498406,-0.754001zm3.271589,-6.543178l0,12.268463c0,1.013424 -0.360382,1.881163 -1.07988,2.600653s-1.587231,1.079884 -2.600655,1.079884l-12.268466,0c-1.013426,0 -1.881164,-0.360388 -2.600658,-1.079884s-1.07988,-1.587229 -1.07988,-2.600653l0,-12.268463c0,-1.013427 0.360386,-1.881164 1.07988,-2.600659s1.587232,-1.07988 2.600658,-1.07988l12.268466,0c1.013424,0 1.881161,0.360386 2.600655,1.07988s1.07988,1.587232 1.07988,2.600659z' class='st0'/></g></svg>");
+}
+
+ul.fuentes li p {
+  padding:0;
+}
+
+// efecto backward https://github.com/IanLunn/Hover/blob/master/css/hover.css
+ul.fuentes li {
+//  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+ul.fuentes li:hover, ul.fuentes li:focus, ul.fuentes li:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+  text-decoration: underline $blue;
+}
+
 ol {
   list-style-type: decimal;
 }
@@ -419,6 +453,34 @@ p.list-group-item-date {
   padding: 0 15px 15px;
   margin: 18px 0 0;
   flex:initial;
+}
+
+// nuevos hiperlinks
+:root {
+  --mainColor: #4183C4;
+}
+div.entry > p  a {
+  background:
+     -webkit-gradient(
+       linear, left top, left bottom, from(var(--mainColor)),
+       to(var(--mainColor))
+     );
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 2px;
+  padding: 0 4px;
+  text-decoration: none;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+div.entry > p  a:hover {
+  background-size: 4px 50px;
+  color:$white;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

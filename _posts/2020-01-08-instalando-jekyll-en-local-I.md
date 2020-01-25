@@ -136,3 +136,4 @@ FUENTES
 + [Guía Hispana de Ruby](http://www.maestrosdelweb.com/ruby/ )
 
 + [Lo que he aprendido: temas de Jekyll y GitHub Pages](https://ondahostil.wordpress.com/2017/02/24/lo-que-he-aprendido-temas-de-jekyll-y-github-pages/)
+{: .fuentes}

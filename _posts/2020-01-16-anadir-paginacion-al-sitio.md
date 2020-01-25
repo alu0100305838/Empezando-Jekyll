@@ -167,3 +167,4 @@ FUENTES
 + [Jekyll Pagination](https://blog.webjeda.com/jekyll-pagination/)
 
 + [Crea tu propia página o blog gratis con Jekyll y Github: Parte 2 - Publicando posts](https://www.campusmvp.es/recursos/post/crea-tu-propia-pagina-o-blog-gratis-con-jekyll-y-github-parte-2-publicando-posts.aspx)
+{: .fuentes}

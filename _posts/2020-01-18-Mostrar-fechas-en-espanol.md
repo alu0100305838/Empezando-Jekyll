@@ -270,3 +270,4 @@ FUENTES
 + [Jekyll - fechas en español](https://dmts.es/post/jekyll-fechas-en-espaol/)
 
 + [Using Jekyll _includes as custom liquid functions](https://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/)
+{: .fuentes}
