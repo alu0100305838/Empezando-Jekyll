@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <article class="post">
+  <article class="post {% if paginator.page %} pag-{{ paginator.page }} {% endif %}">
 
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -29,6 +29,8 @@ layout: default
 
     {% if paginator.previous_page %}
       <p><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Más nuevo</a></p>
+    {% else %}
+      <p>&nbsp;</p>
     {% endif %}
   </nav>
 </div>
