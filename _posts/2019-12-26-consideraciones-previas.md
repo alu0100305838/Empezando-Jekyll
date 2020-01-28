@@ -43,5 +43,6 @@ De aquí en más, veremos en la próxima entrada los pasos para implementar la p
 FUENTES:
 
 + [Smashing Magazine - Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+
 + [Build a blog with Jekyll and Github Pages](http://andrewbtran.github.io/JRN-418/class13/jekyll/)
 {: .fuentes}

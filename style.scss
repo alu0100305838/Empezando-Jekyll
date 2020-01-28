@@ -58,15 +58,17 @@ h1 {
 
 h2 {
   font-size: 37px;
+  color: $blue2;
 }
 
 h3 {
   font-size: 31px;
+  color: $blue3;
 }
 
 h4 {
   font-size: 26px;
-  color: $gray;
+  color: $blue4;
 }
 
 h5 {
@@ -111,6 +113,7 @@ ul.fuentes li {
 
 ul.fuentes li p {
   padding:0;
+  margin: 8px 0;
 }
 
 // efecto backward https://github.com/IanLunn/Hover/blob/master/css/hover.css
@@ -519,7 +522,7 @@ article.pag-1 {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+@import "highlightsolarized-D";
 @import "svg-icons";
 @import "tablas";
 @import "etiquetas";

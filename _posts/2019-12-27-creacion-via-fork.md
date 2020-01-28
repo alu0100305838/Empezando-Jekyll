@@ -74,6 +74,8 @@ NOTA: Dejaremos para más adelante detalles sobre el **Front Matter** indispensa
 FUENTES:
 
 + [Build a blog with Jekyll and Github Pages](http://andrewbtran.github.io/JRN-418/class13/jekyll/)
+
 + [Smashing Magazine - Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+
 + [Jekyll Issues aren't as Bad as You Think](https://blog.webjeda.com/jekyll-issues/)
 {: .fuentes}

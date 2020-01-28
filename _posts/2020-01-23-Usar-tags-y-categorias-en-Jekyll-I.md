@@ -114,9 +114,14 @@ Dejo a consideración alguna de las fuentes de información sobre la implementac
 FUENTES
 
 + [Codinfox](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
+
 + [How to implement Tags at Jekyll website](http://pavdmyt.com/how-to-implement-tags-at-jekyll-website/)
+
 + [3 Simple steps to setup Jekyll Categories and Tags](https://blog.webjeda.com/jekyll-categories/)
+
 + [Jekyll Tags on Github Pages](https://longqian.me/2017/02/09/github-jekyll-tag/)
+
 + [Use Tags and Categories in your Jekyll based Github (cached)](http://webcache.googleusercontent.com/search?q=cache:http://ju.outofmemory.cn/entry/132959)
+
 + [Alphabetizing Jekyll Page Tags In Pure Liquid (Without Plugins)](https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html)
 {: .fuentes}
