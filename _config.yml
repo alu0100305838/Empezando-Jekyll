@@ -58,7 +58,7 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
-#Collections...
+# Collections...
 collections:
   my_categories:
     output: true
