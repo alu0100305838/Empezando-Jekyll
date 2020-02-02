@@ -148,22 +148,22 @@ Por ahora no pienso ir mucho más allá con el rediseño... no es el ámbito ide
 
 Para ser concreto: además de dar los nuevos nombres a las variables de familia de fuente (`$Headers` y `$SansSerif`), voy a "tocar" algún que otro estilo, nada de mucha consideración:
 
-{% highlight css %}
+{% highlight scss %}
 h1, h2, h3, h4, h5, h6 {
-  ...
+  /* ... */
   font-weight: normal;
-  ...
+  /* ... */
 }
 
 .site-name {
-  ...
+  /* ... */
   font-size: 44px;
-  ...
+  /* ... */
 }
 
 .post {
   blockquote {
-    ...    
+    /* ... */   
 	  em {
 	    font-style: normal;
 	  }

@@ -1,19 +1,16 @@
 {% comment %}
 =======================
-The purpose of this snippet is mostrar la categoría para de este post
+El propósito de este snippet es mostrar la categoría para de este post
 =======================
 {% endcomment %}
 
-{% for post_cat in page.category %}
-  {% assign category = site.my_categories | where: "slug", post_cat %}
-  {% if category %}
-    {% assign category = category[0] %}
-    {% capture category_content %}
-    <a class="label" href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
-    {% endcapture %}
+{% for var in site.my_categories %}
+  {% if var.slug == page.category %}
+  {% capture category_link %}
+  <a class="label" href="{{ site.baseurl }}{{ var.url }}">{{ var.name }}</a>
+  {% endcapture %}
   {% endif %}
 {% endfor %}
-
 <p class="post-cat">
-  {% if category_content %}Post en Categoría: {{ category_content }}{% endif %}
+  {% if category_link %}Post en Categoría: {{ category_link }}{% endif %}
 </p>

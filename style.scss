@@ -217,12 +217,15 @@ small {
   float: left;
   width: 70px;
   height: 70px;
-  margin-right: 15px;
+  margin-right: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+    padding: 0;
   }
 
   img {
@@ -246,8 +249,13 @@ small {
   cursor: pointer;
   font-family: $Headers;
   font-weight: 300;
-  font-size: 44px;
+  font-size: 48px;
   letter-spacing: 1px;
+}
+.site-name {
+  -webkit-text-fill-color: $lightGray; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $blue;
 }
 
 .site-description {
