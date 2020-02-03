@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Usar tags y categorías en Jekyll (IV)
-date: 2020-02-02 13:00:00 -0300
+date: '2020-02-02 13:00:00 -0300'
 category: jekyll
-tags: [jekyll-enhancement, tagging, liquid]
+tags:
+  - jekyll-enhancement
+  - tagging
+  - liquid
+published: true
 ---
 
 Para que un sistema de *tagging* funcione es necesario que las etiquetas asignadas a cada *post* aparezcan disponibles al visitante del blog en forma de *links*.
@@ -52,7 +56,7 @@ Una tentación sería tratar de resolver la cuestión agregando el siguiente có
 {% endraw %}
 {% endhighlight %}
 
-> En *Liquid* los *tags* de control aparecerán  con la notación `{% raw %}{% tag %}{% endraw %}`, y los atributos de los objetos aparecerán como salida de texto en la página si están encerrados entre llaves dobles... algo como `{{ objeto.atributo }}`
+> En *Liquid* los *tags* de control aparecerán  con la notación `{% raw %}{% tag %}{% endraw %}`, y los atributos de los objetos aparecerán como salida de texto en la página si están encerrados entre llaves dobles... algo como `{% raw %}{{ objeto.atributo }}{% endraw %}`
 
 La explicación del simple código propuesto es: **si existe** un valor para la variable `category` en el *Front Matter* de la página, aparecerá insertado en el HTML en el lugar señalado por el marcador de texto (`page.category` vale en el ejemplo **github-pages**).
 
