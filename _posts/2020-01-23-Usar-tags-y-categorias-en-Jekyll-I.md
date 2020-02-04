@@ -3,7 +3,7 @@ layout: post
 title: Usar tags y categorías en Jekyll (I)
 date: 2020-01-23 15:00:00 -0300
 category: jekyll
-tags: [jekyll-enhancement]
+tags: [jekyll-enhancement, tagging]
 ---
 Una de las posibilidades que ofrece *GitHub Pages* —no la única— es la de poder generar un sitio de tipo **blog**, caracterizado por basarse en una **estructura de tipo cronológica** (de allí la importancia de la fecha de publicación de los artículos).
 

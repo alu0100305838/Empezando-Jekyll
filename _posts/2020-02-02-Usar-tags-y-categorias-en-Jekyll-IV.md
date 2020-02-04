@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Usar tags y categorías en Jekyll (IV)
-date: '2020-02-02 13:00:00 -0300'
+date: 2020-02-02 13:00:00 -0300
 category: jekyll
-tags:
-  - jekyll-enhancement
-  - tagging
-  - liquid
-published: true
+tags: [jekyll-enhancement, tagging, liquid]
 ---
 
 Para que un sistema de *tagging* funcione es necesario que las etiquetas asignadas a cada *post* aparezcan disponibles al visitante del blog en forma de *links*.
