@@ -495,7 +495,7 @@ p.list-group-item-date {
 :root {
   --mainColor: #4183C4;
 }
-div.entry > p  a, blockquote a {
+div.entry > p  a, div.entry > ul a, div.entry > ol a, blockquote a {
   background:
      -webkit-gradient(
        linear, left top, left bottom, from(var(--mainColor)),
