@@ -514,7 +514,7 @@ div.entry > p  a, div.entry > ul a, div.entry > ol a, blockquote a {
   -webkit-transition: background-size .5s;
   transition: background-size .5s;
 }
-div.entry > p  a:hover, blockquote a:hover {
+div.entry > p  a:hover, , div.entry > ul a:hover, div.entry > ol a:hover, blockquote a:hover {
   background-size: 4px 50px;
   color:$white;
 }
