@@ -4,7 +4,7 @@ code {
   font-style: normal;
 }
 
-p > code {
+p > code, li code {
   color: $black;
   background-color: $lightGray;
   margin: 0 2px;
