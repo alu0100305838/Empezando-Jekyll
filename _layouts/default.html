@@ -17,6 +17,10 @@
   	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico">
     <!-- añado enlaces a fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato:400,400i&display=swap" rel="stylesheet">
+    <!-- Google Analytics tracking ID -->
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
   </head>
 
   <body>
@@ -50,6 +54,5 @@
       </div>
     </div>
 
-    {% include analytics.html %}
   </body>
 </html>
