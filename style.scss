@@ -427,7 +427,8 @@ nav {
   }
 }
 
-.post-foot { border-top: 1px solid $lightGray;
+.post-foot {
+  border-top: 1px solid $lightGray;
   p, div.date {
 		flex: auto;
     width: 50%;
@@ -464,9 +465,23 @@ article h1 {
 }
 
 // estilos para by tag & by category
-h3.year {
+.blogby {
+  text-align: center;
+  small {
+    font-size: .5em;
+    display: block;
+  }
+  h1 {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+h3.year, h3.cloud {
   padding: 0 15px 15px;
   margin: 15px 0 0;
+}
+h3.year {
   border-bottom: 4px solid $gray;
 }
 a.list-group-item {
@@ -476,6 +491,9 @@ a.list-group-item {
 	justify-content: space-between;
 	flex-wrap: wrap;
   float: none;
+}
+a.list-group-item:last-child {
+  border-bottom: 4px solid $gray;
 }
 h4.list-group-item-heading {
   color: $blue;
@@ -534,3 +552,4 @@ article.pag-1 {
 @import "svg-icons";
 @import "tablas";
 @import "etiquetas";
+@import "tag-cloud";

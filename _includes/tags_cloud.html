@@ -1,0 +1,30 @@
+{% comment %}
+=======================
+The purpose of this snippet es listar las tags de cada post
+=======================
+{% endcomment %}
+
+
+{% if site.tags %}
+<div class="container-l2">
+
+<h3 class="cloud">Tag Cloud</h3>
+{% assign tags = site.tags | sort %}
+<ul class="taxonomy">
+{% for tag in tags %}
+  {% for var in site.my_tags %}
+    {% if var.slug == tag[0] %}
+      {% assign tagname = var.name %}
+    {% endif %}
+  {% endfor %}
+
+  <li class="site-tag">
+    <a href="{{ site.baseurl }}/tag/{{ tag | first }}/">
+      {{ tagname }} ({{ tag | last | size }})
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+</div>
+{% endif %}

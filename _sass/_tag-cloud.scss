@@ -1,0 +1,38 @@
+
+//
+// Inspirado en  https://codepen.io/timothylong/pen/ZOpwWM
+//
+
+
+ul.taxonomy {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+
+	li.site-tag {
+		list-style-type: none;
+	  -webkit-flex: 1 auto;
+	  flex: 1 auto;
+	  padding: 0.5rem;
+	  text-align: center;
+		a {
+			font-size: .833em;
+		  font-weight: bold;
+			background: $blue;
+		  display: block;
+		  text-decoration: none;
+		  padding: 0 0.5rem;
+			line-height: 2em;
+		  border-radius: 3px;
+		  color: #fff;
+		  transition: all 0.1s ease-in-out;
+		}
+		a:hover, a:focus { transform: scale(1.05);	}
+	}
+	li.site-tag:last-child {
+		max-width: 40%;
+	}
+}
