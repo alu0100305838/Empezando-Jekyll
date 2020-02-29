@@ -1,5 +1,5 @@
 code {
-  font-size: 0.778em;
+  font-size: 0.875em;
   font-family: $Monospace;
   font-style: normal;
 }
@@ -14,6 +14,7 @@ p > code, li code {
 }
 
 pre > code {
+  font-size: 14px;
   padding-left: 0;
   margin-left: 0;
   line-height: 1.15;

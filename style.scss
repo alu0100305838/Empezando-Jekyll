@@ -20,7 +20,7 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $SansSerif;
+  font: 18px/1.5 $SansSerif;
   color: $darkGray;
 }
 
@@ -29,6 +29,13 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  p, ul, ol {
+    font-size: .8889em;
+    line-height: 1.5625;
+  }
+  ul p, ol p {
+    font-size: 1em;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,6 +110,7 @@ ul.fuentes {
 }
 
 ul.fuentes li {
+  font-size: 18px;
   list-style-type: none;
   padding-left:28px;
   background-repeat: no-repeat;

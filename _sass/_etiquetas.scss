@@ -16,7 +16,7 @@ $black_25: rgba(0, 0, 0, 0.25);
 }
 
 .tag {
-  font-size: .778em;
+  font-size: .875em;
   font-weight: bold;
 	background: $blue;
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
